@@ -1,0 +1,72 @@
+/*
+Global CSS
+Ground Zero: 0px this is mobile and everything else*/
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid:
+    'header' auto
+    'nav' auto
+    'main' 1fr
+    'footer' auto
+    / 1fr;
+  background-color: aquamarine;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+header,
+nav,
+main,
+footer {
+  background: #fff;
+  padding: 1em;
+}
+
+@media print {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  /*small*/
+}
+@media screen and (min-width: 375px) {
+  body {
+    background-color: crimson;
+  }
+  
+}
+/* MEdium */
+@media screen and (min-width: 640px) {
+  body {
+    background-color: blueviolet;
+  }
+  
+}
+/*large*/
+ @media screen and (min-width: 1024px) {
+
+  body {
+    background-color: antiquewhite;
+    grid:
+    'header header' auto
+    'nav main' auto
+    'nav main' 1fr
+    'nav footer' auto
+    / 12em 1fr;
+
+   }
+   
+ }
