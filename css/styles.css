@@ -1,0 +1,34 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-gap: 1em;
+  grid:
+    'header' auto
+    'nav' auto
+    'main' 1fr
+    'footer' auto
+    / 1fr;
+  background-color: aquamarine;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+header,
+nav,
+main,
+footer {
+  background: #fff;
+  padding: 1em;
+}
